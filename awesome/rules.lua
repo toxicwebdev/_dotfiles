@@ -76,8 +76,9 @@ rules.browsers.rule_any = {
       role = { "browser" }
 }
 rules.browsers.properties = {
-      border_width = 2.5,
       border_color = beautiful.border_normal,
+      border_width = 2.5,
+      maximized = false,
       tag = get_tag("browsers")
 }
 
