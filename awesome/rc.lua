@@ -196,7 +196,10 @@ awful.rules.rules = {
       rules.terminals,
       rules.browsers,
       rules.documents,
-      rules.media
+      rules.media,
+      rules.hubstaff,
+      rules.dev,
+      rules.roblox,
 }
 -- }}}
 

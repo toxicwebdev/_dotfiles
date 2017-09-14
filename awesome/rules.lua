@@ -103,4 +103,24 @@ rules.documents.properties = {
 rules.hubstaff = {}
 rules.hubstaff.rule = { class = "Hubstaff" }
 rules.hubstaff.properties = { floating = true }
+
+rules.dev = {}
+rules.dev.rule_any = {
+    class = {"dev"},
+    instance = {"dev", "RobloxStudioBeta.exe"}
+}
+rules.dev.properties = {
+      border_width = 0,
+      tag = get_tag("dev")
+}
+
+rules.roblox = {}
+rules.roblox.rule = {
+    class = "Wine",
+    instance = "RobloxStudioBeta.exe"
+}
+rules.roblox.properties = {
+    maximized = true
+}
+
 return rules

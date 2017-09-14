@@ -24,7 +24,7 @@ tag[count_tags()] = {
       icon = tag_count..": term",
       properties = {
             _name = "terminals",
-            layout = awful.layout.suit.max,
+            layout = awful.layout.suit.fair,
             screen = s
       }
 }
@@ -51,7 +51,7 @@ tag[count_tags()] = {
       icon = tag_count..": dev",
       properties = {
             _name = "dev",
-            layout = awful.layout.suit.max,
+            layout = awful.layout.suit.fair,
             screen = s
       }
 }
