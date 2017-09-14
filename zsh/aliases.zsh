@@ -20,7 +20,6 @@ alias giad="git add"
 alias gico="git commit"
 alias gipu="git push"
 alias gist="git status"
-alias termite="termite -e tmux"
 alias chromium=chromium_app_mode $@
 
 if [[ "$DISPLAY" ]]; then
