@@ -35,3 +35,18 @@ highlight   Todo
             \ cterm=none
             \ ctermfg=160
             \ ctermbg=none
+
+highlight   Tabline
+            \ cterm=none
+            \ ctermfg=grey
+            \ ctermbg=none
+
+highlight   TabLineFill
+            \ cterm=none
+            \ ctermfg=none
+            \ ctermbg=none
+
+highlight   TabLineSel
+            \ cterm=bold
+            \ ctermfg=none
+            \ ctermbg=0
