@@ -195,10 +195,11 @@ awful.rules.rules = {
       rules.floating,
       rules.terminals,
       rules.browsers,
+      rules.files,
+      rules.dev,
       rules.documents,
       rules.media,
       rules.hubstaff,
-      rules.dev,
       rules.roblox,
 }
 -- }}}

@@ -82,13 +82,22 @@ rules.browsers.properties = {
       tag = get_tag("browsers")
 }
 
-rules.media = {}
-rules.media.rule_any = {
-      class = { "mpv", "Kodi", "feh" }
+rules.files = {}
+rules.files.rule_any = {
+    instance = {"fileman","pcmanfm-qt"}
 }
-rules.media.properties = {
+rules.files.properties = {
+    tag = get_tag("files"),
+}
+
+rules.dev = {}
+rules.dev.rule_any = {
+    class = {"dev"},
+    instance = {"dev", "RobloxStudioBeta.exe"}
+}
+rules.dev.properties = {
       border_width = 0,
-      tag = get_tag("media")
+      tag = get_tag("dev")
 }
 
 rules.documents = {}
@@ -100,19 +109,18 @@ rules.documents.properties = {
       tag = get_tag("docs")
 }
 
+rules.media = {}
+rules.media.rule_any = {
+      class = { "mpv", "Kodi", "feh" }
+}
+rules.media.properties = {
+      border_width = 0,
+      tag = get_tag("media")
+}
+
 rules.hubstaff = {}
 rules.hubstaff.rule = { class = "Hubstaff" }
 rules.hubstaff.properties = { floating = true }
-
-rules.dev = {}
-rules.dev.rule_any = {
-    class = {"dev"},
-    instance = {"dev", "RobloxStudioBeta.exe"}
-}
-rules.dev.properties = {
-      border_width = 0,
-      tag = get_tag("dev")
-}
 
 rules.roblox = {}
 rules.roblox.rule = {
