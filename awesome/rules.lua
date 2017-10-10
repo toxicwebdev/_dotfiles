@@ -1,4 +1,5 @@
 local awful = require("awful")
+local gears = require("gears")
 local beautiful = require("beautiful")
 local clientkeys = require("bindings.keyboard").client._local
 
@@ -66,7 +67,7 @@ rules.terminals.rule_any = {
 rules.terminals.properties = {
       border_width = 1,
       border_color = "#000000",
-      tag = get_tag("terminals")
+      tag = get_tag("terminals"),
 }
 
 rules.browsers = {}
