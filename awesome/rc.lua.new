@@ -1,0 +1,25 @@
+local naughty = require "naughty"
+-- Handle Errors --
+local handlers = require "handlers"
+
+handlers.startup()
+awesome.connect_signal("debug::error", handlers.runtime);
+
+-- Variables --
+local variables = require "variables"
+
+-- Mouse Bindings --
+local mouse = require "bindings.mouse"
+root.buttons(mouse.root:join())
+
+-- Keyboard Bindings --
+local keyboard = require "bindings.keyboard"
+local globalkeys = keyboard.global:join()
+root.keys(globalkeys)
+
+-- Signals --
+local signals = require "signals"
+client.connect_signal("manage", signals.manage_new_client);
+client.connect_signal("request::titlebars", signals.add_titlebars)
+client.connect_signal("focus", function(c) c.border_color = beautiful.border_focus end)
+client.connect_signal("unfocus", function(c) c.border_color = beautiful.border_normal end)
